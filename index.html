@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Priscilla School, Apapa, Lagos: a caring creche, nursery and primary school on Marine Road. Nigerian &amp; British curriculum, swimming pool, ICT centre, school bus. Book a visit on WhatsApp.">
+<meta property="og:title" content="Priscilla School, Apapa">
+<meta property="og:description" content="Raising children who learn and pray. Creche to Primary 6 on Marine Road, Apapa, Lagos.">
+<meta property="og:image" content="https://priscillaschools.com/img/hero.jpg">
+<meta property="og:url" content="https://priscillaschools.com/">
+<meta name="theme-color" content="#3D6AD6">
+<link rel="icon" href="img/crest.svg" type="image/svg+xml">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Priscilla School, Apapa, Lagos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: periwinkle backdrop, one white rounded frame; photo hero with serif overlay; pill fact row; 4 stage tiles; 2x2 colour cards; people cards; booking + find-us. */
+:root{
+  --backdrop:#C9D3EC; --frame:#FFFFFF; --ink:#151A26; --muted:#4D5468; --line:#E3E6EE; --soft:#F2F3F6;
+  --blue:#3D6AD6; --blue-ink:#FFFFFF; --dark:#1D222D; --wa:#1F9D55;
+  --lav:#CDD6F0; --sage:#DCE3D8; --olive:#ABB797; --coral:#EF7468; --yellow:#F8D777; --card-ink:#161A24;
+  --logo-red:#E8414F; --logo-navy:#2B2D7A; --logo-pink:#F3A9B4; --logo-blue:#2E7FD0; --logo-gold:#F4C430;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --backdrop:#0B0F1B; --frame:#141927; --ink:#EEF1F8; --muted:#A3AAC0; --line:#262D40; --soft:#1C2233;
+  --blue:#5A84E8; --dark:#0E121C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --backdrop:#0B0F1B; --frame:#141927; --ink:#EEF1F8; --muted:#A3AAC0; --line:#262D40; --soft:#1C2233;
+  --blue:#5A84E8; --dark:#0E121C; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--backdrop);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;padding-inline:16px;padding-block:24px 48px}
+.frame{max-width:1180px;margin-inline:auto;overflow-x:clip;background:var(--frame);border-radius:32px;padding:clamp(14px,2.2vw,26px);box-shadow:0 40px 80px -50px rgba(30,40,80,.45)}
+h1,h2,h3,p{margin:0}
+h1{font-family:var(--serif);font-weight:600;letter-spacing:-.015em;line-height:1.08;text-wrap:balance}
+h2{font-family:var(--sans);font-weight:700;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}
+h2{font-size:clamp(1.9rem,3.8vw,2.75rem)}
+h3{font-size:1.3rem;font-weight:600;letter-spacing:-.01em;line-height:1.2;text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:10px}
+.muted{color:var(--muted)}
+.label{font-size:.82rem;font-weight:600;letter-spacing:.02em;opacity:.78}
+
+/* pills & round buttons */
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font:600 .95rem var(--sans);text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:transform .15s ease}
+.pill:hover{transform:translateY(-1px)}
+.pill svg{width:18px;height:18px;flex:none}
+.pill-blue{background:var(--blue);color:#fff}
+.pill-dark{background:#1D222D;color:#fff}
+.pill-white{background:#fff;color:#161A24}
+.pill-wa{background:var(--wa);color:#fff}
+.round{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex:none;text-decoration:none;font-size:1.1rem;line-height:1}
+.round svg{width:16px;height:16px}
+
+/* nav */
+.nav{display:flex;align-items:center;gap:16px;padding:6px 6px 18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand .crest{width:40px;height:50px;background:#fff;border-radius:8px;padding:2px;border:1px solid var(--line)}
+.brand .crest svg{width:100%;height:100%;display:block}
+.brand b{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;white-space:nowrap}
+.brand small{display:block;font-size:.72rem;color:var(--muted)}
+.links{display:flex;gap:26px;margin-left:auto;font-size:.9rem;font-weight:500}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.nav .pill{padding:10px 18px}
+@media (max-width:860px){.links{display:none}.nav .pill{margin-left:auto}}
+
+/* hero */
+.hero{position:relative;border-radius:24px;overflow:hidden;min-height:clamp(380px,46vw,520px);display:flex;align-items:flex-end;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 22%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(12,16,30,.85) 0%,rgba(12,16,30,.66) 36%,rgba(12,16,30,0) 64%)}
+.hero-copy{padding:clamp(24px,4.5vw,56px);display:grid;gap:22px;max-width:640px;color:#fff}
+.hero h1{font-size:clamp(2.3rem,4.8vw,3.9rem)}
+.hero h1 em{font-style:italic;color:#F8D777}
+.hero p{font-size:1.06rem;max-width:42ch;opacity:.9}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:10px}
+.hero .tag{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.92);color:#161A24;border-radius:999px;padding:8px 14px;font-size:.8rem;font-weight:600}
+@media (max-width:620px){.hero{display:block;min-height:0;background:#1D222D}.hero img{position:static;display:block;height:280px;object-position:50% 18%}.hero::before{display:none}.hero .tag{display:none}}
+
+/* fact row */
+.facts{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding-block:22px 8px}
+.facts span{border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:.86rem;color:var(--muted);background:var(--frame)}
+.facts span:first-child{background:var(--soft);color:var(--blue);font-weight:600;border-color:transparent}
+.facts .round{margin-left:auto;width:44px;height:44px;background:var(--wa);color:#fff}
+.facts .round svg{width:22px;height:22px}
+@media (max-width:620px){.facts .round{margin-left:0}}
+
+.block{padding-block:clamp(36px,6vw,64px) 0}
+.head{display:flex;flex-wrap:wrap;gap:12px 32px;align-items:end;justify-content:space-between;margin-bottom:26px}
+.head p{max-width:46ch}
+
+/* stage tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.tile{border-radius:22px;padding:20px;display:grid;grid-template-rows:auto 1fr auto auto;gap:18px;min-height:300px;min-width:0}
+.tile .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.tile h3{font-size:1.45rem;align-self:end}
+.tile p{font-size:.95rem;opacity:.88}
+.bar{height:4px;border-radius:4px;background:currentColor;opacity:.18;position:relative}
+.bar-wrap{display:grid;gap:8px}
+.bar-wrap .bar i{position:absolute;inset:0 auto 0 0;border-radius:4px;background:var(--fill);opacity:1}
+.bar-wrap .bar{opacity:1;background:color-mix(in srgb,currentColor 16%,transparent)}
+.tile .pill{justify-self:start;padding:11px 18px;font-size:.88rem}
+.t-dark{background:#1D222D;color:#fff;--fill:#F8D777}
+.t-dark .round{background:#fff;color:#161A24}
+.t-light{background:var(--soft);color:var(--ink);--fill:var(--blue)}
+.t-light .round{background:#1D222D;color:#fff}
+.t-blue{background:var(--blue);color:#fff;--fill:#fff}
+.t-blue .round{background:#fff;color:#161A24}
+@media (max-width:980px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.tiles{grid-template-columns:1fr}.tile{min-height:0}}
+.after{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;border:1px dashed var(--line);border-radius:18px;padding:14px 18px}
+.after p{font-size:.95rem}
+
+/* colour cards */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{border-radius:24px;padding:clamp(20px,3vw,30px);color:var(--card-ink);display:grid;gap:18px;align-content:start;min-width:0;position:relative}
+.card .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.card h3{font-size:clamp(1.5rem,2.4vw,1.9rem);font-weight:600}
+.card .sub{font-size:.9rem;opacity:.75;margin-top:6px}
+.card .round{background:#1D222D;color:#fff}
+.card .foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto}
+.c-lav{background:var(--lav)}.c-sage{background:var(--sage)}.c-olive{background:var(--olive)}.c-coral{background:var(--coral)}
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;font-size:.93rem;font-weight:500}
+.list li{display:flex;gap:9px;align-items:baseline}
+.list li::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.55;flex:none;transform:translateY(-2px)}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+.chips li{background:rgba(255,255,255,.6);border-radius:999px;padding:7px 13px;font-size:.84rem;font-weight:600}
+.chips li.wide{background:rgba(255,255,255,.85);flex-basis:100%;border-radius:14px}
+.chips li.wide small{display:block;font-weight:500;opacity:.7}
+.news-item{background:rgba(255,255,255,.55);border-radius:14px;padding:12px 14px;display:grid;gap:2px}
+.news-item small{font-weight:600;opacity:.7}
+@media (max-width:760px){.cards{grid-template-columns:1fr}}
+@media (max-width:420px){.list{grid-template-columns:1fr}}
+
+/* photo banner */
+.banner{margin:0 0 16px;position:relative;border-radius:24px;overflow:hidden;aspect-ratio:21/8;max-width:100%}
+.banner img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
+.banner figcaption{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);color:#161A24;border-radius:999px;padding:9px 16px;font-size:.85rem;font-weight:600}
+@media (max-width:620px){.banner{aspect-ratio:4/3}}
+/* people */
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.person{border-radius:24px;padding:22px;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:22px;align-items:center;color:var(--card-ink);min-width:0}
+.p-yellow{background:var(--yellow)}.p-lav{background:var(--lav)}
+.person .pic{aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:rgba(255,255,255,.55);display:grid;place-items:center;max-width:100%}
+.person .pic img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.person .pic svg{width:46%;opacity:.35}
+.person .info{display:grid;gap:10px;justify-items:start;min-width:0}
+.person h3{font-weight:700;font-size:clamp(1.5rem,2.4vw,1.9rem);line-height:1.1}
+.person .role{font-size:.85rem;font-weight:600;opacity:.75}
+.person .num{font-variant-numeric:tabular-nums;font-weight:600;user-select:all}
+@media (max-width:860px){.people{grid-template-columns:1fr}}
+@media (max-width:420px){.person{grid-template-columns:1fr}.person .pic{max-width:180px}}
+
+/* booking + find */
+.book{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}
+.book-copy{border-radius:24px;background:#1D222D;color:#fff;padding:clamp(22px,3.4vw,36px);display:grid;gap:22px;align-content:start}
+.book-copy h2{font-size:clamp(1.9rem,3.4vw,2.5rem)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
+.steps li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;opacity:.9}
+.steps li::before{counter-increment:s;content:counter(s);flex:none;width:26px;height:26px;border-radius:50%;background:#F8D777;color:#161A24;font-weight:700;font-size:.8rem;display:grid;place-items:center}
+.where{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;display:grid;gap:14px;font-size:.95rem}
+.where b{display:block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#F8D777;margin-bottom:2px}
+.where .num{font-variant-numeric:tabular-nums;user-select:all}
+.where a{text-underline-offset:3px}
+form{border-radius:24px;background:var(--soft);padding:clamp(20px,3vw,30px);display:grid;gap:14px;align-content:start}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-size:.84rem;font-weight:600;min-width:0}
+input,select,textarea{font:inherit;font-size:.98rem;color:var(--ink);background:var(--frame);border:1px solid var(--line);border-radius:14px;padding:12px 14px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue)}
+textarea{min-height:80px;resize:vertical}
+form .pill{width:100%;padding-block:15px;font-size:1rem}
+.hint{font-size:.82rem;color:var(--muted)}
+@media (max-width:860px){.book{grid-template-columns:1fr}}
+
+footer{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding:28px 8px 4px;font-size:.84rem;color:var(--muted)}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.fab svg{width:28px;height:28px}
+
+/* ===== motion ===== */
+@keyframes kenburns{0%{transform:scale(1.08) translateX(1.5%)}100%{transform:scale(1) translateX(-1.5%)}}
+@keyframes rise{from{transform:translateY(28px);opacity:0}to{transform:none;opacity:1}}
+@keyframes slideX{from{transform:translateX(-36px);opacity:0}to{transform:none;opacity:1}}
+@keyframes drop{from{transform:translateY(-20px);opacity:0}to{transform:none;opacity:1}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,157,85,.5)}70%{box-shadow:0 0 0 16px rgba(31,157,85,0)}100%{box-shadow:0 0 0 0 rgba(31,157,85,0)}}
+.hero img{animation:kenburns 16s ease-in-out infinite alternate;will-change:transform}
+.hero-copy > *{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-copy > *:nth-child(2){animation-delay:.15s}.hero-copy > *:nth-child(3){animation-delay:.3s}
+.hero .tag{animation:drop .8s .5s cubic-bezier(.2,.7,.2,1) both}
+.facts > *{animation:slideX .7s cubic-bezier(.2,.7,.2,1) both}
+.facts > *:nth-child(2){animation-delay:.08s}.facts > *:nth-child(3){animation-delay:.16s}.facts > *:nth-child(4){animation-delay:.24s}.facts > *:nth-child(5){animation-delay:.32s}.facts > *:nth-child(6){animation-delay:.4s}
+.fab{animation:pulse 2.6s 1.5s infinite}
+/* ticker */
+.ticker{margin-top:18px;border-radius:999px;background:#1D222D;color:#fff;overflow:hidden;padding-block:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.ticker-track{display:flex;width:max-content;animation:marquee 38s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{display:inline-flex;align-items:center;gap:18px;padding-right:18px;font-weight:600;font-size:.98rem;white-space:nowrap}
+.ticker span::after{content:"";width:8px;height:8px;border-radius:50%;background:#F8D777}
+.ticker span:nth-child(3n+2)::after{background:#EF7468}.ticker span:nth-child(3n)::after{background:#5A84E8}
+/* scroll reveals: only elements below the fold at load are held back */
+[data-anim]{transition:transform .85s cubic-bezier(.2,.7,.2,1),opacity .85s ease;transition-delay:var(--d,0ms)}
+.pending[data-anim="up"]{transform:translateY(46px);opacity:0}
+.pending[data-anim="left"]{transform:translateX(-70px);opacity:0}
+.pending[data-anim="right"]{transform:translateX(70px);opacity:0}
+.pending[data-anim="zoom"]{transform:scale(.93);opacity:0}
+/* hover lift */
+.tile,.card,.person{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease,opacity .85s ease}
+@media (hover:hover){.tile:not(.pending):hover,.card:not(.pending):hover,.person:not(.pending):hover{transform:translateY(-6px);box-shadow:0 22px 40px -26px rgba(20,30,60,.45);transition-delay:0ms}}
+.tile[data-anim],.card[data-anim],.person[data-anim]{transition:transform .85s cubic-bezier(.2,.7,.2,1),opacity .85s ease,box-shadow .35s ease;transition-delay:var(--d,0ms)}
+.banner{overflow:hidden}
+.banner img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.banner:hover img{transform:scale(1.04)}
+.bar i{transition:width 1.2s cubic-bezier(.2,.7,.2,1) .35s}
+.tile.pending .bar i{width:0!important}
+@media (prefers-reduced-motion:reduce){.pending[data-anim]{transform:none!important;opacity:1!important}.ticker-track{animation:none;flex-wrap:wrap;width:auto}}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="crest" viewBox="0 0 280 360">
+    <!-- fleur-de-lis -->
+    <g fill="var(--logo-blue)">
+      <path d="M140 4 C151 18 152 34 140 50 C128 34 129 18 140 4Z"/>
+      <path d="M137 46 C124 46 114 36 118 24 C121 32 129 36 137 38Z"/>
+      <path d="M143 46 C156 46 166 36 162 24 C159 32 151 36 143 38Z"/>
+      <rect x="128" y="45" width="24" height="5" rx="2"/>
+    </g>
+    <!-- scroll ornament -->
+    <g fill="none" stroke="var(--logo-blue)" stroke-width="6" stroke-linecap="round">
+      <path d="M140 56 C120 66 98 44 76 54 C60 61 56 76 66 80 C74 83 80 74 73 69"/>
+      <path d="M140 56 C160 66 182 44 204 54 C220 61 224 76 214 80 C206 83 200 74 207 69"/>
+      <path d="M58 82 C46 80 40 70 44 62"/>
+      <path d="M222 82 C234 80 240 70 236 62"/>
+    </g>
+    <!-- shield -->
+    <path d="M64 100 L64 228 Q64 306 140 320 Q216 306 216 228 L216 100Z" fill="#fff"/>
+    <path d="M64 100 L64 228 Q64 306 140 320 Q216 306 216 228 L216 100" fill="none" stroke="var(--logo-pink)" stroke-width="20" stroke-linejoin="round"/>
+    <!-- name banner -->
+    <rect x="38" y="80" width="204" height="36" rx="3" fill="var(--logo-red)"/>
+    <rect x="42" y="84" width="196" height="28" rx="2" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/>
+    <text x="140" y="106" text-anchor="middle" fill="#fff" font-family="Bricolage Grotesque, Arial Black, sans-serif" font-weight="800" font-size="21" textLength="180" lengthAdjust="spacingAndGlyphs">PRISCILLA SCHOOL</text>
+    <!-- book stack -->
+    <g transform="translate(92 134) rotate(-5)">
+      <g>
+        <rect x="0" y="0" width="104" height="14" rx="2" fill="var(--logo-red)"/><rect x="92" y="2" width="12" height="10" fill="#fff"/>
+        <rect x="4" y="16" width="104" height="14" rx="2" fill="var(--logo-navy)"/><rect x="96" y="18" width="12" height="10" fill="#fff"/>
+        <rect x="-2" y="32" width="104" height="14" rx="2" fill="var(--logo-red)"/><rect x="90" y="34" width="12" height="10" fill="#fff"/>
+        <rect x="6" y="48" width="104" height="14" rx="2" fill="var(--logo-navy)"/><rect x="98" y="50" width="12" height="10" fill="#fff"/>
+        <rect x="0" y="64" width="104" height="14" rx="2" fill="var(--logo-red)"/><rect x="92" y="66" width="12" height="10" fill="#fff"/>
+      </g>
+      <g stroke="#c9cbe0" stroke-width="1"><path d="M94 5h10M94 9h10M98 21h10M98 25h10M92 37h10M92 41h10M100 53h10M100 57h10M94 69h10M94 73h10"/></g>
+    </g>
+    <!-- open book under the stack -->
+    <path d="M86 236 L118 214 L150 236Z" fill="none" stroke="var(--logo-red)" stroke-width="4" stroke-linejoin="round"/>
+    <!-- praying hands -->
+    <g transform="translate(156 236) rotate(-22)">
+      <path d="M0 -86 C6 -86 10 -80 10 -74 C16 -72 19 -66 19 -60 C25 -57 27 -50 26 -43 C31 -38 32 -28 31 -18 C33 10 28 40 24 68 L-22 68 C-26 48 -28 30 -27 16 C-36 10 -40 -4 -32 -10 C-28 -13 -24 -12 -22 -8 C-22 -30 -18 -60 -10 -76 C-7 -83 -4 -86 0 -86Z" fill="var(--logo-gold)" stroke="#B9860B" stroke-width="2.5" stroke-linejoin="round"/>
+      <g fill="none" stroke="#B9860B" stroke-width="2" stroke-linecap="round">
+        <path d="M-1 -84 C-2 -40 -2 20 -1 58"/>
+        <path d="M9 -73 C7 -62 6 -52 6 -45"/><path d="M19 -59 C16 -50 14 -41 14 -33"/><path d="M26 -42 C23 -34 21 -25 21 -17"/>
+        <path d="M-22 -8 C-20 4 -16 12 -9 16"/>
+        <path d="M-23 58 L25 58" stroke-width="2.5"/>
+      </g>
+    </g>
+    <!-- motto ribbon -->
+    <path d="M8 300 L36 296 L36 334 L8 338 L20 318Z" fill="var(--logo-red)"/>
+    <path d="M272 300 L244 296 L244 334 L272 338 L260 318Z" fill="var(--logo-red)"/>
+    <path d="M30 292 Q140 340 250 292 L250 330 Q140 378 30 330Z" fill="var(--logo-navy)"/>
+    <path id="mottoPath" d="M42 320 Q140 364 238 320" fill="none"/>
+    <text fill="#fff" font-family="Bricolage Grotesque, Arial Black, sans-serif" font-weight="800" font-size="23" letter-spacing="1"><textPath href="#mottoPath" startOffset="50%" text-anchor="middle">LEARN &amp; PRAY</textPath></text>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.79 14.06c-.24.68-1.42 1.3-1.96 1.35-.5.05-.98.23-3.3-.69-2.79-1.1-4.56-3.95-4.7-4.13-.13-.18-1.12-1.49-1.12-2.85 0-1.36.71-2.02.97-2.3.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.33Z"/></symbol>
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M4 12 L12 4 M6 4 H12 V10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="person" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5C21 16.5 17 14 12 14Z"/></symbol>
+</svg>
+
+<div class="frame">
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Priscilla School home">
+      <span class="crest"><svg viewBox="0 0 280 360" role="img" aria-label="Priscilla School crest"><use href="#crest"/></svg></span>
+      <span><b>Priscilla School</b><small>Apapa, Lagos</small></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#classes">Classes</a><a href="#life">School life</a><a href="#team">Our team</a><a href="#book">Visit</a>
+    </nav>
+    <a class="pill pill-blue wa-link" href="#book" target="_blank" rel="noopener">Book a visit</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="img/hero.jpg" alt="Pupils in school uniform gathered around a globe in the school library">
+      <span class="tag">2026/2027 admissions open</span>
+      <div class="hero-copy">
+        <h1>Raising children who <em>learn</em> and pray.</h1>
+        <p>A caring creche, nursery and primary school on Marine Road, Apapa, where good learning and good character grow side by side.</p>
+        <div class="ctas">
+          <a class="pill pill-blue wa-link" href="#book" target="_blank" rel="noopener">Book a visit</a>
+          <a class="pill pill-white" href="#classes">Explore classes</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="facts" aria-label="At a glance">
+      <span>Apapa · Lagos</span>
+      <span>Creche to Primary 6</span>
+      <span>Nigerian &amp; British curriculum</span>
+      <span>After School care</span>
+      <span>School bus</span>
+      <a class="round wa-link" href="#book" target="_blank" rel="noopener" aria-label="WhatsApp the school"><svg aria-hidden="true"><use href="#wa"/></svg></a>
+    </div>
+
+    <div class="ticker" aria-label="Activities at Priscilla School"><div class="ticker-track"><span>Swimming lessons</span><span>Spelling bee</span><span>Inter-house sports</span><span>French</span><span>Ballet</span><span>Music &amp; Drama</span><span>Excursions</span><span>Prize-giving day</span><span>Debate &amp; Press</span><span>Art &amp; Craft</span><span>Colour day</span><span>ICT centre</span><span aria-hidden="true">Swimming lessons</span><span aria-hidden="true">Spelling bee</span><span aria-hidden="true">Inter-house sports</span><span aria-hidden="true">French</span><span aria-hidden="true">Ballet</span><span aria-hidden="true">Music &amp; Drama</span><span aria-hidden="true">Excursions</span><span aria-hidden="true">Prize-giving day</span><span aria-hidden="true">Debate &amp; Press</span><span aria-hidden="true">Art &amp; Craft</span><span aria-hidden="true">Colour day</span><span aria-hidden="true">ICT centre</span></div></div>
+
+    <section class="block" id="classes">
+      <div class="head">
+        <h2>From first steps<br>to Primary 6.</h2>
+        <p class="muted">Children can join us as babies and stay right through primary school, growing in one setting they know and trust, with teachers who know each child by name.</p>
+      </div>
+      <div class="tiles">
+        <article class="tile t-dark">
+          <div class="top"><span class="label">Stage 1 of 4<br>Our youngest</span><a class="round wa-ask" data-level="Creche" href="#book" target="_blank" rel="noopener" aria-label="Ask about Creche"><svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          <h3>Creche &amp; Daycare</h3>
+          <div class="bar-wrap"><div class="bar"><i style="width:25%"></i></div><p>Warm care, gentle routine and plenty of play.</p></div>
+          <a class="pill pill-white wa-ask" data-level="Creche" href="#book" target="_blank" rel="noopener">Ask about Creche</a>
+        </article>
+        <article class="tile t-light">
+          <div class="top"><span class="label">Stage 2 of 4<br>Early years</span><a class="round wa-ask" data-level="Toddler" href="#book" target="_blank" rel="noopener" aria-label="Ask about Toddler class"><svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          <h3>Toddler</h3>
+          <div class="bar-wrap"><div class="bar"><i style="width:50%"></i></div><p>Songs, stories and play that build confidence and language.</p></div>
+          <a class="pill pill-dark wa-ask" data-level="Toddler" href="#book" target="_blank" rel="noopener">Ask about Toddler</a>
+        </article>
+        <article class="tile t-blue">
+          <div class="top"><span class="label">Stage 3 of 4<br>Ready for school</span><a class="round wa-ask" data-level="Nursery" href="#book" target="_blank" rel="noopener" aria-label="Ask about Nursery"><svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          <h3>Nursery</h3>
+          <div class="bar-wrap"><div class="bar"><i style="width:75%"></i></div><p>Phonics, numbers, shapes and lots of hands-on activity.</p></div>
+          <a class="pill pill-white wa-ask" data-level="Nursery" href="#book" target="_blank" rel="noopener">Ask about Nursery</a>
+        </article>
+        <article class="tile t-light">
+          <div class="top"><span class="label">Stage 4 of 4<br>Primary 1 – 6</span><a class="round wa-ask" data-level="Primary" href="#book" target="_blank" rel="noopener" aria-label="Ask about Primary"><svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          <h3>Primary</h3>
+          <div class="bar-wrap"><div class="bar"><i style="width:100%"></i></div><p>English, Mathematics, Sciences and more, with high expectations.</p></div>
+          <a class="pill pill-dark wa-ask" data-level="Primary" href="#book" target="_blank" rel="noopener">Ask about Primary</a>
+        </article>
+      </div>
+      <div class="after"><p><b>After School care</b> is available, so working parents can pick up later in the day.</p><a class="pill pill-dark wa-ask" data-level="After School care" href="#book" target="_blank" rel="noopener">Ask about After School</a></div>
+    </section>
+
+    <section class="block" id="life">
+      <div class="head">
+        <h2>Room to learn, swim,<br>play and create.</h2>
+        <p class="muted">Our campus behind Lagoon Hospital is equipped for a full, active school day, and there is something for every child after lessons.</p>
+      </div>
+      <figure class="banner">
+        <img src="img/playroom.jpg" alt="Young children laughing as they build with blocks, paint and read picture books in a bright playroom">
+        <figcaption>Play-based learning in our early years</figcaption>
+      </figure>
+      <div class="cards">
+        <article class="card c-lav">
+          <div class="top"><div><h3>Facilities</h3><p class="sub">On our Marine Road campus</p></div><span class="round" aria-hidden="true">+</span></div>
+          <ul class="list">
+            <li>Swimming pool</li><li>Standard ICT centre</li><li>Interactive whiteboards</li><li>Library</li>
+            <li>Multipurpose hall</li><li>Sports playground</li><li>Zoological &amp; botanical garden</li><li>Sick bay</li>
+            <li>School bus service</li><li>Lunch programme</li>
+          </ul>
+          <div class="foot"><span class="sub">Inclusive classrooms for children with special needs</span></div>
+        </article>
+        <article class="card c-sage">
+          <div class="top"><div><h3>Clubs &amp; societies</h3><p class="sub">After lessons, every week</p></div><span class="round" aria-hidden="true">+</span></div>
+          <ul class="chips">
+            <li class="wide">First Priority Club<small>Red Cross &amp; Brownies, football, reading, numeracy</small></li>
+            <li>Music &amp; Drama</li><li>Mathematics</li><li>JETS</li><li>Foreign Languages</li><li>Entrepreneurs</li>
+            <li>Debate &amp; Press</li><li>Ballet</li><li>Art &amp; Craft</li><li>Swimming</li>
+          </ul>
+        </article>
+        <article class="card c-olive">
+          <div class="top"><div><h3>Through the year</h3><p class="sub">Lessons, outings and celebrations</p></div><span class="round" aria-hidden="true">+</span></div>
+          <ul class="chips">
+            <li>Swimming lessons</li><li>Special music class</li><li>French</li><li>Etiquette</li><li>Dance</li>
+            <li>Quiz, debate &amp; spelling bee</li><li>Inter-house sports</li><li>Excursions &amp; field trips</li>
+            <li>Prize-giving day</li><li>Costume day</li><li>Colour day</li><li>Class parties</li>
+          </ul>
+        </article>
+        <article class="card c-coral" id="news">
+          <div class="top"><div><h3>News &amp; achievements</h3><p class="sub">Proud moments at Priscilla</p></div><span class="round" aria-hidden="true">+</span></div>
+          <div id="newsList" style="display:grid;gap:10px"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="team">
+      <div class="head">
+        <h2>The people who welcome<br>you at the gate.</h2>
+        <p class="muted">Families who want to see the school are shown around personally. Send a WhatsApp message to arrange a time.</p>
+      </div>
+      <div class="people">
+        <article class="person p-yellow">
+          <div class="pic"><img src="img/banke-ojo.jpg" alt="Mrs Banke Ojo, School Administrator"></div>
+          <div class="info">
+            <span class="role">School Administrator</span>
+            <h3>Mrs Banke Ojo</h3>
+            <span class="num">0805 510 1414</span>
+            <a class="pill pill-dark" href="tel:+2348055101414">Call the school</a>
+          </div>
+        </article>
+        <article class="person p-lav">
+          <div class="pic"><img src="img/mopelola-olubolade.jpg" alt="Mrs Mopelola Olubolade, Proprietor of Priscilla School"></div>
+          <div class="info">
+            <span class="role">Proprietor</span>
+            <h3>Mrs Mopelola Olubolade</h3>
+            <span style="opacity:.75;font-size:.92rem">Arrange your visit with her directly on WhatsApp.</span>
+            <a class="pill pill-dark wa-link" href="#book" target="_blank" rel="noopener">Book a visit</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="book">
+      <div class="book">
+        <div class="book-copy">
+          <h2>See the school for yourself.</h2>
+          <ol class="steps">
+            <li>Tell us about your child and when you would like to come.</li>
+            <li>Tap the green button. WhatsApp opens with your message written.</li>
+            <li>Press send. The proprietor will reply to confirm your visit.</li>
+          </ol>
+          <div class="where">
+            <div><b>Address</b>59 Marine Road (Oscar Ibru Way), Apapa, Lagos. Behind Lagoon Hospital, by Liverpool bus stop. <a href="https://www.google.com/maps/search/?api=1&query=Lagoon+Hospital+Marine+Road+Apapa+Lagos" target="_blank" rel="noopener">Open in Google Maps</a></div>
+            <div><b>Phone</b><span class="num">0805 510 1414</span> · <span class="num">0703 117 5885</span> · <span class="num">0803 302 1210</span></div>
+            <div><b>WhatsApp</b><span class="num wa-num"></span></div>
+          </div>
+        </div>
+        <form id="bookForm" novalidate>
+          <div class="row">
+            <label for="parent">Your name<input id="parent" autocomplete="name" placeholder="e.g. Mrs Adaeze Okafor"></label>
+            <label for="phone">Your phone<input id="phone" type="tel" autocomplete="tel" placeholder="080..."></label>
+          </div>
+          <div class="row">
+            <label for="child">Child's name<input id="child" placeholder="e.g. Tolu"></label>
+            <label for="age">Child's age<input id="age" placeholder="e.g. 4 years"></label>
+          </div>
+          <div class="row">
+            <label for="level">Class of interest
+              <select id="level"><option>Creche</option><option>Toddler</option><option selected>Nursery</option><option>Primary</option><option>After School care</option><option>Not sure yet</option></select>
+            </label>
+            <label for="when">Preferred day<input id="when" placeholder="e.g. Thursday morning"></label>
+          </div>
+          <label for="note">Anything else? (optional)<textarea id="note" placeholder="Questions about fees, transport, resumption..."></textarea></label>
+          <a class="pill pill-wa" id="sendWa" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Send on WhatsApp</a>
+          <p class="hint">Prefer to type it yourself? WhatsApp the proprietor on <strong class="wa-num"></strong>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="yr">2026</span> Priscilla School, Apapa, Lagos · Sister school: Knightdale Middle College</span><span>Learn &amp; Pray</span></footer>
+</div>
+
+<a class="fab wa-link" href="#book" target="_blank" rel="noopener" aria-label="Book a visit on WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg></a>
+
+<script>
+/* ===== Edit these ===== */
+const WHATSAPP = "2348033021210";      // proprietor's WhatsApp, international format, no + or spaces
+const WHATSAPP_DISPLAY = "0803 302 1210";
+const INSTAGRAM = "";                   // e.g. "priscillaschoolapapa" (blank hides the button)
+const NEWS = [
+  // { kind:"Award", date:"2026-06-20", title:"Winners, Apapa inter-school spelling bee" },
+];
+/* ====================== */
+const waBase = "https://wa.me/" + WHATSAPP + "?text=";
+const enc = t => waBase + encodeURIComponent(t);
+document.querySelectorAll(".wa-link").forEach(a => a.href = enc("Hello, I would like to book a visit to Priscilla School, Apapa. When would be a good time?"));
+document.querySelectorAll(".wa-ask").forEach(a => a.href = enc("Hello, I would like to know more about " + a.dataset.level + " at Priscilla School, Apapa."));
+document.querySelectorAll(".wa-num").forEach(e => e.textContent = WHATSAPP_DISPLAY);
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+const send = document.getElementById("sendWa"), form = document.getElementById("bookForm");
+function build(){
+  const v = id => (document.getElementById(id).value || "").trim();
+  const L = ["Hello, I would like to book a visit to Priscilla School, Apapa."];
+  if (v("parent")) L.push("Parent: " + v("parent"));
+  if (v("child") || v("age")) L.push("Child: " + [v("child"), v("age") && "(" + v("age") + ")"].filter(Boolean).join(" "));
+  L.push("Class of interest: " + v("level"));
+  if (v("when")) L.push("Preferred day: " + v("when"));
+  if (v("phone")) L.push("My phone: " + v("phone"));
+  if (v("note")) L.push("Note: " + v("note"));
+  L.push("Thank you.");
+  send.href = enc(L.join("\n"));
+}
+form.addEventListener("input", build); form.addEventListener("submit", e => e.preventDefault()); build();
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const box = document.getElementById("newsList");
+const ig = INSTAGRAM ? `<a class="pill pill-white" style="justify-self:start" href="https://www.instagram.com/${esc(INSTAGRAM)}/" target="_blank" rel="noopener">Follow @${esc(INSTAGRAM)}</a>` : "";
+box.innerHTML = NEWS.length
+  ? NEWS.map(n => `<div class="news-item"><small>${esc(n.kind||"News")}${n.date?" · "+new Date(n.date).toLocaleDateString("en-GB",{month:"long",year:"numeric"}):""}</small><span>${esc(n.title)}</span></div>`).join("") + ig
+  : `<p style="font-size:.95rem;max-width:44ch">Prize-giving days, competition wins and celebrations will be shared here soon. Parents with photos or news can send them to the proprietor on WhatsApp.</p>${ig}`;
+
+/* motion: reveal sections as they scroll in (anything already on screen is never hidden) */
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  const mark=(sel,kind,step,base)=>document.querySelectorAll(sel).forEach((el,i)=>{
+    el.dataset.anim=typeof kind==='function'?kind(i):kind;
+    el.style.setProperty('--d',((base||0)+i*(step||0))+'ms');
+  });
+  document.querySelectorAll('.head').forEach(h=>{ const a=h.children[0], b=h.children[1];
+    if(a){a.dataset.anim='left';} if(b){b.dataset.anim='right'; b.style.setProperty('--d','120ms');} });
+  mark('.tile','up',110); mark('.after','up');
+  mark('.banner','zoom');
+  mark('.cards .card',i=>i%2?'right':'left',90);
+  mark('.person',i=>i%2?'right':'left',120);
+  mark('.book-copy','left'); mark('#bookForm','right',0,120);
+  const els=[...document.querySelectorAll('[data-anim]')];
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.remove('pending'); io.unobserve(e.target);} }),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(el=>{ if(el.getBoundingClientRect().top>innerHeight*0.9){ el.classList.add('pending'); io.observe(el);} });
+  setTimeout(()=>els.forEach(el=>el.classList.remove('pending')),12000);
+})();
+</script>
+
+</body>
+</html>
