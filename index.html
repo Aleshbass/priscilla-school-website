@@ -183,16 +183,23 @@ a{color:inherit}
 .kd-facts .num{font-variant-numeric:tabular-nums;user-select:all}
 .kd-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
 .kd-chips li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;font-size:.84rem;font-weight:600}
+.kd-award{display:flex;gap:16px;align-items:center;background:#F5D90A;color:#2A0E12;border-radius:20px;padding:12px 18px 12px 12px;text-decoration:none;transition:transform .2s ease}
+.kd-award:hover{transform:translateY(-2px)}
+.kd-award img{width:76px;height:88px;object-fit:cover;object-position:50% 18%;border-radius:14px;flex:none;background:#fff}
+.kd-award > span{display:grid;gap:3px;min-width:0}
+.kd-award-tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.kd-award strong{font-size:1.02rem;line-height:1.3}
+.kd-award > span > span{font-size:.88rem;opacity:.85}
 .kd-ctas{display:flex;flex-wrap:wrap;gap:10px}
 .kd-ctas .pill{white-space:normal;text-align:center}
 .college-brand > div{min-width:0}.college h2{overflow-wrap:anywhere}
 .kd-pill{background:#F5D90A;color:#2A0E12}
 .kd-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
-.college-photo{margin:0;position:relative;border-radius:20px;overflow:hidden;min-height:320px;max-width:100%}
-.college-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 62%}
+.college-photo{margin:0;position:relative;border-radius:20px;overflow:hidden;aspect-ratio:1;align-self:center;max-width:100%}
+.college-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .college-photo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);color:#161A24;border-radius:999px;padding:7px 13px;font-size:.8rem;font-weight:600}
 @media (max-width:860px){.college{grid-template-columns:minmax(0,1fr)}.college-photo{min-height:0;aspect-ratio:4/3}}
-@media (max-width:420px){.kd-facts{grid-template-columns:1fr}.college-brand{align-items:flex-start}}
+@media (max-width:420px){.kd-award{flex-direction:column;align-items:flex-start;padding:14px}.kd-award img{width:88px;height:100px}.kd-facts{grid-template-columns:1fr}.college-brand{align-items:flex-start}}
 /* photo banner */
 .banner{margin:0 0 16px;position:relative;border-radius:24px;overflow:hidden;aspect-ratio:21/8;max-width:100%}
 .banner img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
@@ -483,14 +490,18 @@ footer{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;paddin
           <ul class="kd-chips" aria-label="Facilities and activities at Knightdale">
             <li>Science laboratory</li><li>Swimming pool</li><li>ICT centre</li><li>Library</li><li>Basketball</li><li>Lawn tennis</li><li>Badminton</li><li>Football</li><li>Foreign field trips</li><li>Debate &amp; press</li><li>JETS club</li><li>French</li>
           </ul>
+          <a class="kd-award" href="https://businessday.ng/insurance/article/14-years-old-ndanyongmong-emerges-2023-heirs-life-essay-champion/" target="_blank" rel="noopener">
+            <img src="img/samuel-john.jpg" width="400" height="500" alt="Samuel John, Knightdale Middle College student, in school uniform" loading="lazy">
+            <span><b class="kd-award-tag">National award · 2023</b><strong>Samuel John: First Runner-Up, Heirs Life Essay Championship</strong><span>Chosen from over 5,000 entries across Nigeria for his essay "My Dream Career". Prize: ₦150,000.</span></span>
+          </a>
           <div class="kd-ctas">
             <a class="pill kd-pill wa-college" href="#book" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Ask about Knightdale admissions</a>
             <a class="pill kd-ghost" href="tel:+2348055101414">Call 0805 510 1414</a>
           </div>
         </div>
         <figure class="college-photo">
-          <img src="img/principal-office-sm.jpg" srcset="img/principal-office-sm.jpg 720w, img/principal-office.jpg 1200w" sizes="(max-width: 860px) 100vw, 460px" width="1200" height="1600" alt="A Knightdale student in maroon and khaki uniform walking past the principal's office" loading="lazy" decoding="async">
-          <figcaption>Principal's office and art room</figcaption>
+          <img src="img/knightdale-reading.jpg" width="1073" height="1073" alt="Four Knightdale Middle College students in uniform reading a book together" loading="lazy" decoding="async">
+          <figcaption>Knightdale students reading together</figcaption>
         </figure>
       </div>
     </section>
@@ -578,6 +589,7 @@ const WHATSAPP = "2348033021210";      // proprietor's WhatsApp, international f
 const WHATSAPP_DISPLAY = "0803 302 1210";
 const INSTAGRAM = "";                   // e.g. "priscillaschoolapapa" (blank hides the button)
 const NEWS = [
+  { kind:"Award", date:"2023-09-20", title:"Samuel John of Knightdale Middle College was named First Runner-Up in the national Heirs Life Essay Championship 2023, chosen from over 5,000 entries.", url:"https://businessday.ng/insurance/article/14-years-old-ndanyongmong-emerges-2023-heirs-life-essay-champion/" },
   // { kind:"Award", date:"2026-06-20", title:"Winners, Apapa inter-school spelling bee" },
 ];
 /* ====================== */
@@ -608,7 +620,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 const box = document.getElementById("newsList");
 const ig = INSTAGRAM ? `<a class="pill pill-white" style="justify-self:start" href="https://www.instagram.com/${esc(INSTAGRAM)}/" target="_blank" rel="noopener">Follow @${esc(INSTAGRAM)}</a>` : "";
 box.innerHTML = NEWS.length
-  ? NEWS.map(n => `<div class="news-item"><small>${esc(n.kind||"News")}${n.date?" · "+new Date(n.date).toLocaleDateString("en-GB",{month:"long",year:"numeric"}):""}</small><span>${esc(n.title)}</span></div>`).join("") + ig
+  ? NEWS.map(n => `<div class="news-item"><small>${esc(n.kind||"News")}${n.date?" · "+new Date(n.date).toLocaleDateString("en-GB",{month:"long",year:"numeric"}):""}</small><span>${esc(n.title)}</span>${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener" style="font-weight:600;font-size:.88rem">Read the news story</a>`:""}</div>`).join("") + ig
   : `<p style="font-size:.95rem;max-width:44ch">Prize-giving days, competition wins and celebrations will be shared here soon. Parents with photos or news can send them to the proprietor on WhatsApp.</p>${ig}`;
 
 /* motion: reveal sections as they scroll in (anything already on screen is never hidden) */
