@@ -166,6 +166,33 @@ a{color:inherit}
 .lb-btn{position:fixed;border:0;border-radius:50%;width:48px;height:48px;background:rgba(255,255,255,.95);color:#161A24;font-size:1.9rem;line-height:1;cursor:pointer;display:grid;place-items:center}
 .lb-close{top:calc(14px + env(safe-area-inset-top,0px));right:14px;font-size:1.6rem}
 .lb-prev{left:14px;top:50%;transform:translateY(-50%)}.lb-next{right:14px;top:50%;transform:translateY(-50%)}
+
+/* Knightdale Middle College (fixed colours from the college crest and uniform) */
+.college{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:16px;border-radius:28px;background:#4A1520;color:#FBF3E6;padding:16px}
+.college-copy{padding:clamp(12px,2.6vw,28px);display:grid;gap:20px;align-content:start;min-width:0}
+.college-brand{display:flex;gap:18px;align-items:center}
+.kd-crest{flex:none;width:clamp(84px,10vw,112px);aspect-ratio:1;background:#fff;border-radius:20px;padding:8px;display:grid;place-items:center;box-shadow:0 0 0 3px #F5D90A}
+.kd-crest img{width:100%;height:auto;display:block}
+.kd-label{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F5D90A}
+.college h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-top:4px;color:#fff}
+.kd-motto{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#F5D90A;margin-top:4px}
+.kd-lede{max-width:56ch;opacity:.92}
+.kd-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;margin:0;padding:16px 0;border-block:1px solid rgba(255,255,255,.16)}
+.kd-facts dt{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+.kd-facts dd{margin:2px 0 0;font-weight:600}
+.kd-facts .num{font-variant-numeric:tabular-nums;user-select:all}
+.kd-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+.kd-chips li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;font-size:.84rem;font-weight:600}
+.kd-ctas{display:flex;flex-wrap:wrap;gap:10px}
+.kd-ctas .pill{white-space:normal;text-align:center}
+.college-brand > div{min-width:0}.college h2{overflow-wrap:anywhere}
+.kd-pill{background:#F5D90A;color:#2A0E12}
+.kd-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.college-photo{margin:0;position:relative;border-radius:20px;overflow:hidden;min-height:320px;max-width:100%}
+.college-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 62%}
+.college-photo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);color:#161A24;border-radius:999px;padding:7px 13px;font-size:.8rem;font-weight:600}
+@media (max-width:860px){.college{grid-template-columns:minmax(0,1fr)}.college-photo{min-height:0;aspect-ratio:4/3}}
+@media (max-width:420px){.kd-facts{grid-template-columns:1fr}.college-brand{align-items:flex-start}}
 /* photo banner */
 .banner{margin:0 0 16px;position:relative;border-radius:24px;overflow:hidden;aspect-ratio:21/8;max-width:100%}
 .banner img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
@@ -223,7 +250,7 @@ footer{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;paddin
 .hero-copy > *:nth-child(2){animation-delay:.15s}.hero-copy > *:nth-child(3){animation-delay:.3s}
 .hero .tag{animation:drop .8s .5s cubic-bezier(.2,.7,.2,1) both}
 .facts > *{animation:slideX .7s cubic-bezier(.2,.7,.2,1) both}
-.facts > *:nth-child(2){animation-delay:.08s}.facts > *:nth-child(3){animation-delay:.16s}.facts > *:nth-child(4){animation-delay:.24s}.facts > *:nth-child(5){animation-delay:.32s}.facts > *:nth-child(6){animation-delay:.4s}
+.facts > *:nth-child(2){animation-delay:.08s}.facts > *:nth-child(3){animation-delay:.16s}.facts > *:nth-child(4){animation-delay:.24s}.facts > *:nth-child(5){animation-delay:.32s}.facts > *:nth-child(6){animation-delay:.4s}.facts > *:nth-child(7){animation-delay:.48s}
 .fab{animation:pulse 2.6s 1.5s infinite}
 /* ticker */
 .ticker{margin-top:18px;border-radius:999px;background:#1D222D;color:#fff;overflow:hidden;padding-block:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
@@ -317,7 +344,7 @@ footer{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;paddin
       <span><b>Priscilla School</b><small>Apapa, Lagos</small></span>
     </a>
     <nav class="links" aria-label="Sections">
-      <a href="#classes">Classes</a><a href="#life">School life</a><a href="#team">Our team</a><a href="#book">Visit</a>
+      <a href="#classes">Classes</a><a href="#life">School life</a><a href="#college">College</a><a href="#team">Our team</a><a href="#book">Visit</a>
     </nav>
     <a class="pill pill-blue wa-link" href="#book" target="_blank" rel="noopener">Book a visit</a>
   </header>
@@ -342,6 +369,7 @@ footer{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;paddin
       <span>Nigerian &amp; British curriculum</span>
       <span>After School care</span>
       <span>School bus</span>
+      <span>Secondary: Knightdale Middle College</span>
       <a class="round wa-link" href="#book" target="_blank" rel="noopener" aria-label="WhatsApp the school"><svg aria-hidden="true"><use href="#wa"/></svg></a>
     </div>
 
@@ -438,6 +466,35 @@ footer{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;paddin
       </div>
     </section>
 
+    <section class="block" id="college">
+      <div class="college">
+        <div class="college-copy">
+          <div class="college-brand">
+            <span class="kd-crest"><img src="img/knightdale-crest.png" width="600" height="588" alt="Knightdale Middle College crest: a red apple above two figures, with the motto Redeeming the Time" loading="lazy"></span>
+            <div><span class="kd-label">Our secondary school</span><h2>Knightdale Middle College</h2><p class="kd-motto">Redeeming the time</p></div>
+          </div>
+          <p class="kd-lede">After Primary 6, Priscilla pupils can carry on to secondary school at Knightdale Middle College, our sister college at the same address on Oscar Ibru Way. It shares Priscilla's focus on good character and strong learning, now with the laboratory, sports and subjects a growing teenager needs.</p>
+          <dl class="kd-facts">
+            <div><dt>Curriculum</dt><dd>Nigerian, British &amp; American</dd></div>
+            <div><dt>School type</dt><dd>Day school</dd></div>
+            <div><dt>Administrator</dt><dd>Mrs Isima Grace</dd></div>
+            <div><dt>Phone</dt><dd class="num">0805 510 1414</dd></div>
+          </dl>
+          <ul class="kd-chips" aria-label="Facilities and activities at Knightdale">
+            <li>Science laboratory</li><li>Swimming pool</li><li>ICT centre</li><li>Library</li><li>Basketball</li><li>Lawn tennis</li><li>Badminton</li><li>Football</li><li>Foreign field trips</li><li>Debate &amp; press</li><li>JETS club</li><li>French</li>
+          </ul>
+          <div class="kd-ctas">
+            <a class="pill kd-pill wa-college" href="#book" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Ask about Knightdale admissions</a>
+            <a class="pill kd-ghost" href="tel:+2348055101414">Call 0805 510 1414</a>
+          </div>
+        </div>
+        <figure class="college-photo">
+          <img src="img/principal-office-sm.jpg" srcset="img/principal-office-sm.jpg 720w, img/principal-office.jpg 1200w" sizes="(max-width: 860px) 100vw, 460px" width="1200" height="1600" alt="A Knightdale student in maroon and khaki uniform walking past the principal's office" loading="lazy" decoding="async">
+          <figcaption>Principal's office and art room</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="block" id="team">
       <div class="head">
         <h2>The people who welcome<br>you at the gate.</h2>
@@ -491,7 +548,7 @@ footer{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;paddin
           </div>
           <div class="row">
             <label for="level">Class of interest
-              <select id="level"><option>Creche</option><option>Toddler</option><option selected>Nursery</option><option>Primary</option><option>After School care</option><option>Not sure yet</option></select>
+              <select id="level"><option>Creche</option><option>Toddler</option><option selected>Nursery</option><option>Primary</option><option>After School care</option><option>Knightdale Middle College (secondary)</option><option>Not sure yet</option></select>
             </label>
             <label for="when">Preferred day<input id="when" placeholder="e.g. Thursday morning"></label>
           </div>
@@ -528,6 +585,7 @@ const waBase = "https://wa.me/" + WHATSAPP + "?text=";
 const enc = t => waBase + encodeURIComponent(t);
 document.querySelectorAll(".wa-link").forEach(a => a.href = enc("Hello, I would like to book a visit to Priscilla School, Apapa. When would be a good time?"));
 document.querySelectorAll(".wa-ask").forEach(a => a.href = enc("Hello, I would like to know more about " + a.dataset.level + " at Priscilla School, Apapa."));
+document.querySelectorAll(".wa-college").forEach(a => a.href = enc("Hello, I would like to know more about admission to Knightdale Middle College, the secondary school at Priscilla School, Apapa."));
 document.querySelectorAll(".wa-num").forEach(e => e.textContent = WHATSAPP_DISPLAY);
 document.getElementById("yr").textContent = new Date().getFullYear();
 
@@ -563,7 +621,7 @@ box.innerHTML = NEWS.length
   document.querySelectorAll('.head').forEach(h=>{ const a=h.children[0], b=h.children[1];
     if(a){a.dataset.anim='left';} if(b){b.dataset.anim='right'; b.style.setProperty('--d','120ms');} });
   mark('.tile','up',110); mark('.after','up');
-  mark('.gallery figure','up',55); mark('.snap',i=>i%2?'right':'left',100);
+  mark('.gallery figure','up',55); mark('.snap',i=>i%2?'right':'left',100); mark('.college-copy','left'); mark('.college-photo','right',0,120);
   mark('.cards .card',i=>i%2?'right':'left',90);
   mark('.person',i=>i%2?'right':'left',120);
   mark('.book-copy','left'); mark('#bookForm','right',0,120);
